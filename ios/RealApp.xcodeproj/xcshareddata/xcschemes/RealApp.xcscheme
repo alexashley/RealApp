@@ -17,77 +17,7 @@
                BlueprintIdentifier = "83CBBA2D1A601D0E00E9B192"
                BuildableName = "libReact.a"
                BlueprintName = "React"
-               ReferencedContainer = "container:../node_modules/react-native/React/React.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "58B511DA1A9E6C8500147676"
-               BuildableName = "libRCTAnimation.a"
-               BlueprintName = "RCTAnimation"
-               ReferencedContainer = "container:../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "358F4ED61D1E81A9004DF814"
-               BuildableName = "libRCTBlob.a"
-               BlueprintName = "RCTBlob"
-               ReferencedContainer = "container:../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "58B5115C1A9E6B3D00147676"
-               BuildableName = "libRCTImage.a"
-               BlueprintName = "RCTImage"
-               ReferencedContainer = "container:../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "58B511DA1A9E6C8500147676"
-               BuildableName = "libRCTLinking.a"
-               BlueprintName = "RCTLinking"
-               ReferencedContainer = "container:../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3C86DF451ADF2C930047B81A"
-               BuildableName = "libRCTWebSocket.a"
-               BlueprintName = "RCTWebSocket"
-               ReferencedContainer = "container:../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj">
+               ReferencedContainer = "container:../../../RealApp/node_modules/react-native/React/React.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
