@@ -1,7 +1,7 @@
 default_platform(:ios)
 
 platform :ios do
-  workspace = 'ios/RealApp.xcworkspace'
+  workspace = 'ios/RealApp.xcodeproj'
 
   desc "Run swiftlint"
   lane :lint do
@@ -22,7 +22,7 @@ platform :ios do
       skip_build: true,
       buildlog_path: "fastlane-logs",
       derived_data_path: "derived-data",
-      workspace: workspace)
+      project: workspace)
   end
 end
 
