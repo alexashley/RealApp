@@ -7,7 +7,6 @@ platform :ios do
   lane :lint do
     swiftlint(
       strict: true,
-      quiet: true,
       mode: :lint,
       path: "./ios/RealApp",
       quiet: true,
