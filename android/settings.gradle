@@ -1,0 +1,3 @@
+rootProject.name = 'RealApp'
+
+include ':app'

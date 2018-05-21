@@ -1,0 +1,39 @@
+default_platform(:ios)
+
+platform :ios do
+  project = 'ios/RealApp.xcodeproj'
+
+  desc "Run swiftlint"
+  lane :lint do
+    swiftlint(
+      mode: :lint,
+      path: "./ios/RealApp",
+      quiet: true,
+      executable: "ios/Pods/SwiftLint/swiftlint"
+    )
+  end
+
+  desc "Run iOS tests"
+  lane :test do
+    #lint
+    run_tests(
+      clean: true,
+      skip_build: true,
+      buildlog_path: "fastlane-logs",
+      derived_data_path: "derived-data",
+      project: project)
+  end
+end
+
+platform :android do
+  gradleFlags = "--no-daemon -g gradle-home"
+
+  desc "Runs ktlint & Android tests"
+  lane :test do
+      gradle(
+        task: "check",
+        project_dir: 'android',
+        flags: gradleFlags
+      )
+  end
+end
