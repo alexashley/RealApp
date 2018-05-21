@@ -1,0 +1,12 @@
+ENV['COCOAPODS_DISABLE_STATS'] = "true"
+
+target 'RealApp' do
+  use_frameworks!
+
+  pod 'SwiftLint'
+
+  target 'RealAppTests' do
+    inherit! :search_paths
+  end
+
+end

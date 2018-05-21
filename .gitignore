@@ -51,3 +51,4 @@ fastlane/screenshots
 
 # Bundle artifact
 *.jsbundle
+Pods/
