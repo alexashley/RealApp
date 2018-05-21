@@ -12,14 +12,19 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let jsCodeLocation = URL(string: "http://localhost:8081/index.ios.bundle?platform=ios")
+        let rootView = RCTRootView(
+            bundleURL: jsCodeLocation,
+            moduleName: "RealApp",
+            initialProperties: nil,
+            launchOptions: nil
+        )
+        let controller = UIViewController()
+            controller.view = rootView
+            self.present(controller, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
 }
-
