@@ -1,0 +1,22 @@
+# Bitrise
+
+- will auto-add SSH keys, alternatively can provide your own
+- asks about additional private repos, "For example for private CocoaPods, fastlane match, submodule, etc."
+- free 2 week "Team" level trial
+- `VALIDATING REPOSITORY` step is slow (to be fair, they do say "this may take a few minutes"). But it did detect and generate a config based off of:
+   - package.json
+   - Podfile
+       - interestingly, it found the Podfile but didn't generate a step to install pods
+   - iOS project
+       - even noted that it wasn't setup as a shared scheme (a mistake on my part)
+   - fastlane (all 3 lanes)
+  - gradlew
+- auto-register webhook
+- slick web editor for steps
+- instant message chat: >Hi Alex, Oh, snap! Looks like your builds keep failing.
+- clicking on a build will show the diff of the build's bitrise config vs the current one
+- UI can be clunky at times (try scrolling when using one of the modals)
+- no combined iOS & Android stack: https://discuss.bitrise.io/t/xcode-android-sdk-combined-stack/242/2
+    - suggestion for now is two builds :(
+- bitrise CLI is pretty neat, it was useful while doing some debugging
+- iOS build took ~9 minutes (no caching in place)
