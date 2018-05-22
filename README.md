@@ -1,5 +1,7 @@
 # RealApp
 
+![Bitrise (master)](https://www.bitrise.io/app/b863430aa33752bd/status.svg?token=aX1pizSdomyqOzZYl-oE0w&branch=master)
+
 A small React Native app.
 
 ## Development
