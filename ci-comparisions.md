@@ -20,3 +20,5 @@
     - suggestion for now is two builds :(
 - bitrise CLI is pretty neat, it was useful while doing some debugging
 - iOS build took ~9 minutes (no caching in place)
+- [Can only have one workflow per trigger](https://discuss.bitrise.io/t/how-to-trigger-multiple-workflows-at-the-same-time/3401).
+    - This is a pain point since it's not possible to do an Android build on iOS without using the Xamarin stack.
