@@ -16,7 +16,7 @@ platform :ios do
 
   desc "Run iOS tests"
   lane :test do
-    #lint
+    lint
     run_tests(
       clean: true,
       skip_build: true,

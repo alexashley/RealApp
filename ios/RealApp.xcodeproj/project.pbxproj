@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		75B818BD20B37D01009842F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B818BC20B37D01009842F3 /* AppDelegate.swift */; };
 		75B818BF20B37D01009842F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B818BE20B37D01009842F3 /* ViewController.swift */; };
-		75B818C220B37D01009842F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75B818C020B37D01009842F3 /* Main.storyboard */; };
 		75B818C420B37D02009842F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75B818C320B37D02009842F3 /* Assets.xcassets */; };
 		75B818C720B37D02009842F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75B818C520B37D02009842F3 /* LaunchScreen.storyboard */; };
 		75B818D220B37D02009842F3 /* RealAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B818D120B37D02009842F3 /* RealAppTests.swift */; };
 		75B819FF20B398DD009842F3 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B819DE20B398CC009842F3 /* libReact.a */; };
 		75B81A2120B3A01F009842F3 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B81A1A20B39AD9009842F3 /* libRCTWebSocket.a */; };
+		75B81A4D20B3AB4E009842F3 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B81A4A20B3A9BC009842F3 /* libRCTImage.a */; };
+		75B81A4E20B3AB4E009842F3 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B81A3F20B3A9A1009842F3 /* libRCTText.a */; };
 		C24A41CCE0F06886D324DF79 /* Pods_RealApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9614E2C9742A21739D2CE2B /* Pods_RealApp.framework */; };
 		CFDC69BC9E26A837A4A47A4B /* Pods_RealAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C387CD481AAF68325B764AB /* Pods_RealAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -174,6 +175,34 @@
 			remoteGlobalIDString = 3DBE0D0D1F3B181C0099AA32;
 			remoteInfo = "fishhook-tvOS";
 		};
+		75B81A3E20B3A9A1009842F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75B81A2420B3A999009842F3 /* RCTText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
+			remoteInfo = RCTText;
+		};
+		75B81A4020B3A9A1009842F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75B81A2420B3A999009842F3 /* RCTText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A287B1D9B048500D4039D;
+			remoteInfo = "RCTText-tvOS";
+		};
+		75B81A4920B3A9BC009842F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75B81A4220B3A9B3009842F3 /* RCTImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 58B5115D1A9E6B3D00147676;
+			remoteInfo = RCTImage;
+		};
+		75B81A4B20B3A9BC009842F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75B81A4220B3A9B3009842F3 /* RCTImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A283A1D9B042B00D4039D;
+			remoteInfo = "RCTImage-tvOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -182,7 +211,6 @@
 		75B818B920B37D01009842F3 /* RealApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75B818BC20B37D01009842F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75B818BE20B37D01009842F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		75B818C120B37D01009842F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75B818C320B37D02009842F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75B818C620B37D02009842F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75B818C820B37D02009842F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -192,6 +220,8 @@
 		75B818DC20B37FC9009842F3 /* RealApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RealApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		75B819C820B3988D009842F3 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		75B81A0120B39ACF009842F3 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		75B81A2420B3A999009842F3 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		75B81A4220B3A9B3009842F3 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		A1D59052D7A9B86BB93F8F5C /* Pods-RealAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealAppTests/Pods-RealAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		C56495AFE1020407411D2E03 /* Pods-RealApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealApp/Pods-RealApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C9614E2C9742A21739D2CE2B /* Pods_RealApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,6 +234,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				75B819FF20B398DD009842F3 /* libReact.a in Frameworks */,
+				75B81A4D20B3AB4E009842F3 /* libRCTImage.a in Frameworks */,
+				75B81A4E20B3AB4E009842F3 /* libRCTText.a in Frameworks */,
 				75B81A2120B3A01F009842F3 /* libRCTWebSocket.a in Frameworks */,
 				C24A41CCE0F06886D324DF79 /* Pods_RealApp.framework in Frameworks */,
 			);
@@ -258,7 +290,6 @@
 			children = (
 				75B818BC20B37D01009842F3 /* AppDelegate.swift */,
 				75B818BE20B37D01009842F3 /* ViewController.swift */,
-				75B818C020B37D01009842F3 /* Main.storyboard */,
 				75B818C320B37D02009842F3 /* Assets.xcassets */,
 				75B818C520B37D02009842F3 /* LaunchScreen.storyboard */,
 				75B818C820B37D02009842F3 /* Info.plist */,
@@ -278,6 +309,8 @@
 		75B818DF20B37FD8009842F3 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				75B81A4220B3A9B3009842F3 /* RCTImage.xcodeproj */,
+				75B81A2420B3A999009842F3 /* RCTText.xcodeproj */,
 				75B81A0120B39ACF009842F3 /* RCTWebSocket.xcodeproj */,
 				75B819C820B3988D009842F3 /* React.xcodeproj */,
 			);
@@ -314,6 +347,24 @@
 				75B81A1C20B39AD9009842F3 /* libRCTWebSocket-tvOS.a */,
 				75B81A1E20B39AD9009842F3 /* libfishhook.a */,
 				75B81A2020B39AD9009842F3 /* libfishhook-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75B81A3A20B3A9A1009842F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75B81A3F20B3A9A1009842F3 /* libRCTText.a */,
+				75B81A4120B3A9A1009842F3 /* libRCTText-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75B81A4520B3A9BC009842F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75B81A4A20B3A9BC009842F3 /* libRCTImage.a */,
+				75B81A4C20B3A9BC009842F3 /* libRCTImage-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -404,6 +455,14 @@
 			productRefGroup = 75B818BA20B37D01009842F3 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = 75B81A4520B3A9BC009842F3 /* Products */;
+					ProjectRef = 75B81A4220B3A9B3009842F3 /* RCTImage.xcodeproj */;
+				},
+				{
+					ProductGroup = 75B81A3A20B3A9A1009842F3 /* Products */;
+					ProjectRef = 75B81A2420B3A999009842F3 /* RCTText.xcodeproj */;
+				},
 				{
 					ProductGroup = 75B81A1320B39AD9009842F3 /* Products */;
 					ProjectRef = 75B81A0120B39ACF009842F3 /* RCTWebSocket.xcodeproj */;
@@ -562,6 +621,34 @@
 			remoteRef = 75B81A1F20B39AD9009842F3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		75B81A3F20B3A9A1009842F3 /* libRCTText.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTText.a;
+			remoteRef = 75B81A3E20B3A9A1009842F3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		75B81A4120B3A9A1009842F3 /* libRCTText-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTText-tvOS.a";
+			remoteRef = 75B81A4020B3A9A1009842F3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		75B81A4A20B3A9BC009842F3 /* libRCTImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTImage.a;
+			remoteRef = 75B81A4920B3A9BC009842F3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		75B81A4C20B3A9BC009842F3 /* libRCTImage-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTImage-tvOS.a";
+			remoteRef = 75B81A4B20B3A9BC009842F3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -571,7 +658,6 @@
 			files = (
 				75B818C720B37D02009842F3 /* LaunchScreen.storyboard in Resources */,
 				75B818C420B37D02009842F3 /* Assets.xcassets in Resources */,
-				75B818C220B37D01009842F3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,14 +803,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		75B818C020B37D01009842F3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				75B818C120B37D01009842F3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		75B818C520B37D02009842F3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

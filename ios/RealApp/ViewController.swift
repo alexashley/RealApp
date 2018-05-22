@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let jsCodeLocation = URL(string: "http://localhost:8081/index.ios.bundle?platform=ios")
+        let jsCodeLocation = URL(string: "http://localhost:8081/index.bundle?platform=ios")
         let rootView = RCTRootView(
             bundleURL: jsCodeLocation,
             moduleName: "RealApp",
@@ -20,8 +20,8 @@ class ViewController: UIViewController {
             launchOptions: nil
         )
         let controller = UIViewController()
-            controller.view = rootView
-            self.present(controller, animated: true, completion: nil)
+        controller.view = rootView
+        self.present(controller, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

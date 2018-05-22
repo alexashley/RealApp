@@ -29,7 +29,7 @@ describe('<App/>', () => {
         expect(renderedComponent.type).toBe(View);
         expect(renderedComponent.props.style).toEqual({
             alignItems: 'center',
-            backgroundColor: '#F5FCFF',
+            backgroundColor: 'yellow',
             flex: 1,
             justifyContent: 'center'
         });
