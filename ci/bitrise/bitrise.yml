@@ -1,0 +1,61 @@
+---
+format_version: '4'
+default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
+project_type: fastlane
+app:
+  envs:
+  - FASTLANE_XCODE_LIST_TIMEOUT: '120'
+  - opts:
+      is_expand: false
+    FASTLANE_WORK_DIR: "."
+  - opts:
+      is_expand: false
+    FASTLANE_LANE: ios test
+trigger_map:
+- push_branch: "*"
+  workflow: verify-ios
+- pull_request_source_branch: "*"
+  workflow: verify-ios
+workflows:
+  verify-ios:
+    steps:
+    - activate-ssh-key@3.1.1:
+        run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
+    - git-clone@4.0.10: {}
+    - nvm@1.2.1: {}
+    - yarn@0.0.7:
+        inputs:
+        - command: install
+    - yarn@0.0.7:
+        inputs:
+        - command: test
+    - cocoapods-install@1.7.2:
+        inputs:
+        - source_root_path: "$BITRISE_SOURCE_DIR/ios"
+    - fastlane@2.3.12:
+        inputs:
+        - lane: ios test
+        - work_dir: "$FASTLANE_WORK_DIR"
+    - bitrise-run@0.9.1:
+        inputs:
+        - workflow_id: verify-android
+  verify-android:
+    steps:
+    - activate-ssh-key@3.1.1:
+        run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
+    - git-clone@4.0.10: {}
+    - nvm@1.2.1: {}
+    - yarn@0.0.7:
+        inputs:
+        - command: install
+    - yarn@0.0.7:
+        inputs:
+        - command: test
+    - fastlane@2.3.12:
+        inputs:
+        - lane: android test
+        - work_dir: "$FASTLANE_WORK_DIR"
+    meta:
+      bitrise.io:
+        stack: linux-docker-android
+
