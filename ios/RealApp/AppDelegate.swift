@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        
+
         let jsCodeLocation = URL(string: "http://localhost:8081/index.bundle?platform=ios")
         let rootView = RCTRootView(
             bundleURL: jsCodeLocation,
@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         controller.view = rootView
         window!.rootViewController = controller
         window!.makeKeyAndVisible()
-        
+
         return true
     }
 
